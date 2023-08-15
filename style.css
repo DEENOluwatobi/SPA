@@ -1,7 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(158, 154, 154);
 }
 
 nav {
@@ -28,7 +35,7 @@ nav a {
 }
 
 main {
-    margin-top: 60px; /* Adjust this margin to prevent content from being hidden behind the navigation */
+    margin-top: 60px; 
 }
 
 section {
@@ -36,4 +43,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.glass{
+    /* background: rgba(255, 255, 255, 0.39); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
 }
