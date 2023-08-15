@@ -4,31 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.css">
     <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.js" defer></script>
     <title>S.P.A</title>
 </head>
 <body>
-    <nav class=" w-full flex justify-between items-center px-4 py-4 glass">
-        <div class="">S.P.A</div>
-        <ul class="flex gap-2">
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">About</a></li>
-            <li><a href="#section3">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="section1" class="animate bg-red-200">
-            Hello Section 1
-        </section>
-        <section id="section2" class="animate bg-green-200">
-            Hello Section 2
-        </section>
-        <section id="section3" class="animate bg-yellow-300">
-            Hello Section 3
-        </section>
-    </main>
+    <div class="break">
+        <div class="menu">
+            <div class="font-agdasima">S.P.A</div>
+            <ul class="">
+                <li>
+                    <a href="#section1" class="icons active">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#section2" class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        Pricing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#section3" class="icons">
+                        <i class="fas fa-info-circle"></i>
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#section4" class="icons">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sections-con">
+            <section id="section1" class="section1">
+                <h1 data-aos="fade-right" class="animate-fade-right">Good food choices are good investments.</h1>
+                <p data-aos="fade-up" class="animate-fade-up">Embark on a Culinary Journey Through Timeless Traditions and Modern Innovations. Indulge in Exquisite Creations Crafted with Passion and Served with Warmth. Experience Dining That Transcends Palates, Uniting Friends and Family in Unforgettable Moments.</p>
+                <div  class="bttns flex-center animate-fade-down" data-aos="fade-down">
+                    <button class="pry-btn btn">
+                        Order now
+                        <i class="fa fa-spoon" aria-hidden="true"></i>
+                    </button>
+                    <button class="sec-btn btn">
+                        Learn more
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </section>
+
+
+
+            <section id="section2" class="animate bg-green-200">
+                Hello Section 2
+            </section>
+            <section id="section3" class="animate bg-yellow-300">
+                Hello Section 3
+            </section>
+            <section id="section4" class="animate bg-blue-300">
+                Hello Section 4
+            </section>
+        </div>
+    </div>
 
     
 </body>

@@ -1,6 +1,3 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 body {
@@ -9,23 +6,78 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-nav li {
-    margin: 10px;
+.break{
+    display: flex;
+    position: relative;
 }
 
-nav a {
+ul{
+    margin-top: 50px;
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 0;
+}
+li a {
     text-decoration: none;
+    color: rgb(240, 234, 234);
+    cursor: pointer;
+    font-size: .8em;
+}
+.fas{
+    font-size: 2em;
+    color: gray;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.menu{
+    position: fixed;
+    padding: 10px 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 7%;
+    height: 100%;
+    color: white;
+    background:#2a2b2d ;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+.menu ul li a.active {
+    background-color: #fffef9c1;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px darkgray; 
+    color: black;
 }
 
+.menu ul li a {
+    background-color: transparent; 
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
 
+.sections-con{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 93%;
+}
 section {
     height: 100vh;
     display: flex;
@@ -33,13 +85,6 @@ section {
     justify-content: center;
 }
 
-.glass{
-    background-color: rgba(255, 255, 255, 0.256);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.2px);
-    -webkit-backdrop-filter: blur(12.2px);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-}
 .font-barlow{
     font-family: 'Barlow', sans-serif;
 }
@@ -47,3 +92,92 @@ section {
     font-family: 'Agdasima', sans-serif;
 }
 
+.section1{
+    background-image: url(/Images/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.section1 h1{
+    color: white;
+    font-size: 3.5em;
+    width: 60%;
+    text-align: center;
+    margin: 10px;
+}
+.section1 p{
+    margin: 0;
+    color: lightgoldenrodyellow;
+    width: 65%;
+    text-align: center;
+}
+.bttns{
+    margin-top: 10px;
+    width: 100%;
+
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    margin: 15px ;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+.pry-btn{
+    background-color: rgb(151, 222, 133);
+    color: rgb(19, 92, 9);
+}
+.sec-btn{
+    background-color: rgb(222, 133, 133);
+    color: rgb(92, 20, 9);
+}
+
+@keyframes fade-right {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-right {
+    animation: fade-right 1s ease-in-out;
+}
+
+.animate-fade-up {
+    animation: fade-up 1s ease-in-out;
+}
+
+.animate-fade-down {
+    animation: fade-down 1s ease-in-out;
+}

@@ -1,37 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav a");
+    const navLinks = document.querySelectorAll(".menu ul li a");
 
-    // Smooth scroll to section when clicking navigation link
     navLinks.forEach(link => {
         link.addEventListener("click", event => {
             event.preventDefault();
+
+            // Toggle background color of the clicked link
+            link.classList.toggle("active");
+            
+            // Remove active class and background color from other links
+            navLinks.forEach(otherLink => {
+                if (otherLink !== link) {
+                    otherLink.classList.remove("active");
+                }
+            });
+
             const targetId = link.getAttribute("href");
             const targetSection = document.querySelector(targetId);
+
+            // Calculate the offset taking into account the fixed menu height
+            const offset = targetSection.getBoundingClientRect().top + window.scrollY - 60;
+
             window.scrollTo({
-                top: targetSection.offsetTop,
+                top: offset,
                 behavior: "smooth"
             });
         });
     });
+});
 
-    // Highlight active navigation link based on scroll position
-    window.addEventListener("scroll", () => {
-        const scrollPosition = window.scrollY;
+document.addEventListener("DOMContentLoaded", function() {
+    AOS.init();
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-            if (scrollPosition >= sectionTop - sectionHeight * 0.25) {
-                const sectionId = section.getAttribute("id");
-                navLinks.forEach(link => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === `#${sectionId}`) {
-                        link.classList.add("active");
-                    }
-                });
-            }
-        });
+    const animatedElements = document.querySelectorAll(".animate-fade-right, .animate-fade-up, .animate-fade-down");
+    animatedElements.forEach(element => {
+        element.style.animationPlayState = "running";
     });
 });
