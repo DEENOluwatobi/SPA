@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.css">
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.js" defer></script>
-    <title>S.P.A</title>
+    <title>Restaurant</title>
 </head>
 <body>
     <div class="break">
+        <div id="loading-container body"></div>
         <div class="menu">
+
             <div class="font-agdasima">
                 <img src="/Images/food.png" class="logo" alt="">
             </div>
+
             <ul class="">
                 <li>
                     <a href="#section1" class="icons active">
@@ -47,7 +50,9 @@
                 </li>
             </ul>
         </div>
+
         <div class="sections-con">
+
             <section id="section1" class="section1">
                 <div class="head-logo">
                     <img src="/Images/food.png" class="hero-logo" alt="">
@@ -66,15 +71,130 @@
                 </div>
             </section>
 
+            <div class="extra">
+                <div class="ext">
+                    <div class="ext-con flex-center">
+                        <span class="ext-num">1234</span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <span class="ext-title">Breakfasts</span>
+                </div>
 
+                <div class="ext">
+                    <div class="ext-con flex-center">
+                        <span class="ext-num">354</span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <span class="ext-title">Lunch</span>
+                </div>
 
-            <section id="section2" class="animate bg-green-200">
-                Hello Section 2
+                <div class="ext">
+                    <div class="ext-con flex-center">
+                        <span class="ext-num">4674</span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <span class="ext-title">Dinner</span>
+                </div>
+
+                <div class="ext">
+                    <div class="ext-con flex-center">
+                        <span class="ext-num">2334</span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <span class="ext-title">Desserts</span>
+                </div>
+
+                <div class="ext">
+                    <div class="ext-con flex-center">
+                        <span class="ext-num">8834</span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <span class="ext-title">Extras</span>
+                </div>
+            </div>
+
+            <section id="section2" class="section2">
+                <div class="slider" x-data="{start: true, end: false}">
+                    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17974499/pexels-photo-17974499/free-photo-of-light-people-woman-summer.jpeg" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/1666025/pexels-photo-1666025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17843976/pexels-photo-17843976/free-photo-of-a-sunflower-field-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17772401/pexels-photo-17772401/free-photo-of-portrait-of-woman-taking-a-photo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17852294/pexels-photo-17852294/free-photo-of-city-landscape-man-people.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/7525051/pexels-photo-7525051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/15666565/pexels-photo-15666565/free-photo-of-young-woman-with-a-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17854099/pexels-photo-17854099/free-photo-of-sunlight-over-couple-diving.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17616208/pexels-photo-17616208/free-photo-of-strawberries-in-basket.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17813816/pexels-photo-17813816/free-photo-of-young-redhead-reading-a-book-at-an-outdoor-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                      <div class="slider__item">
+                        <img class="slider__image" src="https://images.pexels.com/photos/17838732/pexels-photo-17838732/free-photo-of-woman-with-horse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <div class="slider__info">
+                          <h2>This is a card</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider__nav">
+                      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+                      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+                    </div>
+                  </div>
             </section>
-            <section id="section3" class="animate bg-yellow-300">
+
+
+            <section id="section3" class="section3">
                 Hello Section 3
             </section>
-            <section id="section4" class="animate bg-blue-300">
+            <section id="section4" class="section4">
                 Hello Section 4
             </section>
         </div>
