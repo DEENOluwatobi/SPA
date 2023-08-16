@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Images/food.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.css">
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.js" defer></script>
-    <title>Restaurant</title>
+    <title>Food | S.P.A</title>
 </head>
 <body>
     <div class="break">
@@ -115,79 +116,95 @@
 
             <section id="section2" class="section2">
                 <div class="slider" x-data="{start: true, end: false}">
+                    <h1  class="explore-title explore-section">Explore</h1>
                     <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17974499/pexels-photo-17974499/free-photo-of-light-people-woman-summer.jpeg" alt="Image">
+                        <img class="slider__image" src="/Images/noodles.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Noodles & Toast</h2>
+                          <span>$ 5.99</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/1666025/pexels-photo-1666025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/macaroni.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Macaroni</h2>
+                          <span>$ 4.59</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17843976/pexels-photo-17843976/free-photo-of-a-sunflower-field-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/bacon.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Bacon</h2>
+                          <span>$ 4.59</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17772401/pexels-photo-17772401/free-photo-of-portrait-of-woman-taking-a-photo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/pizza.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Pizza</h2>
+                          <span>$ 2.55</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17852294/pexels-photo-17852294/free-photo-of-city-landscape-man-people.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/salad.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Salad</h2>
+                          <span>$ 2.59</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/7525051/pexels-photo-7525051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/chicken.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Chicken</h2>
+                          <span>$ 3.59</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/15666565/pexels-photo-15666565/free-photo-of-young-woman-with-a-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/sardines.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Sardines</h2>
+                          <span>$ 2.59</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17854099/pexels-photo-17854099/free-photo-of-sunlight-over-couple-diving.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/shrimp.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Shrimps</h2>
+                          <span>$ 6.59</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17616208/pexels-photo-17616208/free-photo-of-strawberries-in-basket.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/cakes.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Cake</h2>
+                          <span>$ 1.99</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17813816/pexels-photo-17813816/free-photo-of-young-redhead-reading-a-book-at-an-outdoor-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/seafood.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Seafood</h2>
+                          <span>$ 4.59</span>
                         </div>
                       </div>
                       <div class="slider__item">
-                        <img class="slider__image" src="https://images.pexels.com/photos/17838732/pexels-photo-17838732/free-photo-of-woman-with-horse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+                        <img class="slider__image" src="/Images/egg-on-toast.jpg" alt="Image">
                         <div class="slider__info">
-                          <h2>This is a card</h2>
+                          <h2>Egg on toast</h2>
+                          <span>$ 3.59</span>
                         </div>
                       </div>
                     </div>
                     <div class="slider__nav">
-                      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
-                      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+                        <button class="slider__nav__button slider__nav__button--prev">Previous</button>
+                        <button class="slider__nav__button slider__nav__button--next">Next</button>
                     </div>
                   </div>
+
+                <div class="svg-con">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 330" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(225.722, 200.333, 9, 1)" offset="0%"></stop><stop stop-color="rgba(255, 160.293, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,132L120,159.5C240,187,480,242,720,253C960,264,1200,231,1440,231C1680,231,1920,264,2160,247.5C2400,231,2640,165,2880,143C3120,121,3360,143,3600,170.5C3840,198,4080,231,4320,253C4560,275,4800,286,5040,264C5280,242,5520,187,5760,137.5C6000,88,6240,44,6480,44C6720,44,6960,88,7200,126.5C7440,165,7680,198,7920,220C8160,242,8400,253,8640,220C8880,187,9120,110,9360,99C9600,88,9840,143,10080,176C10320,209,10560,220,10800,209C11040,198,11280,165,11520,170.5C11760,176,12000,220,12240,242C12480,264,12720,264,12960,236.5C13200,209,13440,154,13680,115.5C13920,77,14160,55,14400,88C14640,121,14880,209,15120,253C15360,297,15600,297,15840,253C16080,209,16320,121,16560,110C16800,99,17040,165,17160,198L17280,231L17280,330L17160,330C17040,330,16800,330,16560,330C16320,330,16080,330,15840,330C15600,330,15360,330,15120,330C14880,330,14640,330,14400,330C14160,330,13920,330,13680,330C13440,330,13200,330,12960,330C12720,330,12480,330,12240,330C12000,330,11760,330,11520,330C11280,330,11040,330,10800,330C10560,330,10320,330,10080,330C9840,330,9600,330,9360,330C9120,330,8880,330,8640,330C8400,330,8160,330,7920,330C7680,330,7440,330,7200,330C6960,330,6720,330,6480,330C6240,330,6000,330,5760,330C5520,330,5280,330,5040,330C4800,330,4560,330,4320,330C4080,330,3840,330,3600,330C3360,330,3120,330,2880,330C2640,330,2400,330,2160,330C1920,330,1680,330,1440,330C1200,330,960,330,720,330C480,330,240,330,120,330L0,330Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250.767, 1.504, 61.137, 1)" offset="0%"></stop><stop stop-color="rgba(223.445, 117.711, 21.525, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,231L120,231C240,231,480,231,720,209C960,187,1200,143,1440,110C1680,77,1920,55,2160,49.5C2400,44,2640,55,2880,71.5C3120,88,3360,110,3600,115.5C3840,121,4080,110,4320,88C4560,66,4800,33,5040,44C5280,55,5520,110,5760,148.5C6000,187,6240,209,6480,187C6720,165,6960,99,7200,110C7440,121,7680,209,7920,214.5C8160,220,8400,143,8640,137.5C8880,132,9120,198,9360,198C9600,198,9840,132,10080,137.5C10320,143,10560,220,10800,220C11040,220,11280,143,11520,104.5C11760,66,12000,66,12240,55C12480,44,12720,22,12960,16.5C13200,11,13440,22,13680,55C13920,88,14160,143,14400,170.5C14640,198,14880,198,15120,192.5C15360,187,15600,176,15840,192.5C16080,209,16320,253,16560,264C16800,275,17040,253,17160,242L17280,231L17280,330L17160,330C17040,330,16800,330,16560,330C16320,330,16080,330,15840,330C15600,330,15360,330,15120,330C14880,330,14640,330,14400,330C14160,330,13920,330,13680,330C13440,330,13200,330,12960,330C12720,330,12480,330,12240,330C12000,330,11760,330,11520,330C11280,330,11040,330,10800,330C10560,330,10320,330,10080,330C9840,330,9600,330,9360,330C9120,330,8880,330,8640,330C8400,330,8160,330,7920,330C7680,330,7440,330,7200,330C6960,330,6720,330,6480,330C6240,330,6000,330,5760,330C5520,330,5280,330,5040,330C4800,330,4560,330,4320,330C4080,330,3840,330,3600,330C3360,330,3120,330,2880,330C2640,330,2400,330,2160,330C1920,330,1680,330,1440,330C1200,330,960,330,720,330C480,330,240,330,120,330L0,330Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(84.702, 234.829, 8.038, 1)" offset="0%"></stop><stop stop-color="rgba(9.653, 212.061, 16.652, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,165L120,170.5C240,176,480,187,720,198C960,209,1200,220,1440,198C1680,176,1920,121,2160,110C2400,99,2640,132,2880,154C3120,176,3360,187,3600,209C3840,231,4080,264,4320,247.5C4560,231,4800,165,5040,132C5280,99,5520,99,5760,93.5C6000,88,6240,77,6480,93.5C6720,110,6960,154,7200,148.5C7440,143,7680,88,7920,55C8160,22,8400,11,8640,38.5C8880,66,9120,132,9360,154C9600,176,9840,154,10080,170.5C10320,187,10560,242,10800,225.5C11040,209,11280,121,11520,71.5C11760,22,12000,11,12240,33C12480,55,12720,110,12960,137.5C13200,165,13440,165,13680,176C13920,187,14160,209,14400,187C14640,165,14880,99,15120,110C15360,121,15600,209,15840,209C16080,209,16320,121,16560,104.5C16800,88,17040,143,17160,170.5L17280,198L17280,330L17160,330C17040,330,16800,330,16560,330C16320,330,16080,330,15840,330C15600,330,15360,330,15120,330C14880,330,14640,330,14400,330C14160,330,13920,330,13680,330C13440,330,13200,330,12960,330C12720,330,12480,330,12240,330C12000,330,11760,330,11520,330C11280,330,11040,330,10800,330C10560,330,10320,330,10080,330C9840,330,9600,330,9360,330C9120,330,8880,330,8640,330C8400,330,8160,330,7920,330C7680,330,7440,330,7200,330C6960,330,6720,330,6480,330C6240,330,6000,330,5760,330C5520,330,5280,330,5040,330C4800,330,4560,330,4320,330C4080,330,3840,330,3600,330C3360,330,3120,330,2880,330C2640,330,2400,330,2160,330C1920,330,1680,330,1440,330C1200,330,960,330,720,330C480,330,240,330,120,330L0,330Z"></path><defs><linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(11.333, 43.579, 28.833, 1)" offset="0%"></stop><stop stop-color="rgba(11, 255, 234.337, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,0L120,27.5C240,55,480,110,720,143C960,176,1200,187,1440,203.5C1680,220,1920,242,2160,242C2400,242,2640,220,2880,225.5C3120,231,3360,264,3600,280.5C3840,297,4080,297,4320,286C4560,275,4800,253,5040,214.5C5280,176,5520,121,5760,132C6000,143,6240,220,6480,247.5C6720,275,6960,253,7200,231C7440,209,7680,187,7920,192.5C8160,198,8400,231,8640,209C8880,187,9120,110,9360,115.5C9600,121,9840,209,10080,242C10320,275,10560,253,10800,236.5C11040,220,11280,209,11520,187C11760,165,12000,132,12240,110C12480,88,12720,77,12960,88C13200,99,13440,132,13680,126.5C13920,121,14160,77,14400,88C14640,99,14880,165,15120,170.5C15360,176,15600,121,15840,93.5C16080,66,16320,66,16560,77C16800,88,17040,110,17160,121L17280,132L17280,330L17160,330C17040,330,16800,330,16560,330C16320,330,16080,330,15840,330C15600,330,15360,330,15120,330C14880,330,14640,330,14400,330C14160,330,13920,330,13680,330C13440,330,13200,330,12960,330C12720,330,12480,330,12240,330C12000,330,11760,330,11520,330C11280,330,11040,330,10800,330C10560,330,10320,330,10080,330C9840,330,9600,330,9360,330C9120,330,8880,330,8640,330C8400,330,8160,330,7920,330C7680,330,7440,330,7200,330C6960,330,6720,330,6480,330C6240,330,6000,330,5760,330C5520,330,5280,330,5040,330C4800,330,4560,330,4320,330C4080,330,3840,330,3600,330C3360,330,3120,330,2880,330C2640,330,2400,330,2160,330C1920,330,1680,330,1440,330C1200,330,960,330,720,330C480,330,240,330,120,330L0,330Z"></path></svg>
+                </div>  
             </section>
 
 
