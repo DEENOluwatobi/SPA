@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 observer.unobserve(exploreSection);
             }
         });
-    }, { threshold: 1 });
+    }, { threshold: 0.5 });
     observer.observe(exploreSection);
 
     // SVG ANIMATE  -------------------
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 svgObserver.unobserve(section2);
             }
         });
-    }, { threshold: 1});
+    }, { threshold: 0.5});
     svgObserver.observe(section2);
     
 
