@@ -389,6 +389,103 @@ section {
     z-index: 2;
 }
 
+
+/* --------------------------------- */
+/* ----------SECTION 3--------------*/
+/* --------------------------------- */
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(218, 246, 224);
+    background-size: cover;
+    position: relative;
+}
+
+.sec-3 {
+    width: 85%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.sec-3 h1 {
+    font-size: 5rem;
+    background: url('/Images/diet.jpg') center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.about-con{
+    position: relative;
+    padding: 20px;
+    width: 70%;
+    background: rgba(212, 238, 67, 0.19);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(136, 169, 46, 0.382);
+}
+.sub-about{
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(13, 156, 99);
+    margin: 10px 0;
+}
+.svg-about{
+    position: absolute;
+    width: 100%;
+    bottom: -7px;
+    left: 0;
+}
+.main-about-sub{
+    color: rgb(10, 53, 31);
+}
+.chef-img{
+    position: absolute;
+    background-image: url('/Images/chef.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 4px solid yellowgreen;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: -200px;
+    right: -230px;
+    z-index: 55;
+}
+.abt-img1{
+    position: absolute;
+    background-image: url('/Images/diet.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 4px solid rgb(9, 206, 167);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    bottom: -20px;
+    right: -180px;
+    z-index: 55;
+}
+.abt-img2{
+    position: absolute;
+    background-image: url('/Images/cakes.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 4px solid rgb(9, 206, 167);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    top: -200px;
+    right: 40px;
+    z-index: 55;
+}
 @media screen and (max-width: 1000px) {
     .break{
         display: flex;
