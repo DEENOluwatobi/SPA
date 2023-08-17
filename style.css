@@ -335,6 +335,9 @@ section {
   .slider__info {
     position: relative;
     padding: 4rem 2rem 2rem;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(32, 50, 57, 0));
   }
   
@@ -353,6 +356,17 @@ section {
     font-weight: 300;
     font-size: 1rem;
     margin: 0;
+  }
+  .slider__info button{
+    width: 5em;
+    padding: 5px;
+    border: 2px solid white;
+    background: transparent;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
   }
   .slider__nav {
     position: relative;
