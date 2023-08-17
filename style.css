@@ -841,7 +841,17 @@ section {
         font-size: 3em;
         margin: 0;
     }
-    
+    .fas{
+        font-size: 1.5em;
+        color: gray;
+    }
+    .icons{
+        display: flex;
+        gap: 2px;
+    }
+    .logo{
+        display: none;
+    }
 }
 
 @media (min-width: 460px) {
