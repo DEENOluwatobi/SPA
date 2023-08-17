@@ -74,8 +74,51 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, { threshold: 0.5});
     svgObserver.observe(section2);
-    
 
+    // ABOUT PAGE ANIMATE----------------
+    const aboutSection = document.querySelector('.section3');
+    const h1 = aboutSection.querySelector('h1');
+
+    const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+    };
+
+    const AboutObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        h1.style.opacity = '1';
+        h1.style.transform = 'translateY(0)';
+        AboutObserver.unobserve(h1);
+        }
+    });
+    }, observerOptions);
+    AboutObserver.observe(h1);
+
+
+    // ABOUT FLOATS ANIMATION ------------------------
+    const imageElements = document.querySelectorAll('.chef-img, .abt-img1, .abt-img2');
+    const svgAbout = document.querySelector('.svg-about svg');
+
+    const FloatObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+            FloatObserver.unobserve(entry.target);
+        }
+    });
+    }, observerOptions);
+
+    imageElements.forEach(element => {
+        FloatObserver.observe(element);
+    });
+    FloatObserver.observe(svgAbout);
+
+   
+
+    
     // GALLERY SCROLLER ---------
     const slider = document.querySelector(".slider__content");
     const prevButton = document.querySelector(".slider__nav__button--prev");
